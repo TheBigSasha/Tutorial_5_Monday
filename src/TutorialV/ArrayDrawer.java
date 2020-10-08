@@ -23,7 +23,11 @@ public class ArrayDrawer extends Canvas {
             }
         };
         r.run();*/
-        //bubbleSort(dataset);
+        bubbleSort(dataset);
+    }
+
+    private void bubbleSort(Color[] dataset) {
+
     }
 
     public void refresh(Color[] input){
