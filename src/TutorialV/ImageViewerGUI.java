@@ -17,7 +17,8 @@ public class ImageViewerGUI {
     //====================================================== Sample "Images" ========================================================
     public static final Color[][] easyImage = new Color[][]{{Color.RED, Color.BLACK, Color.WHITE}};
     public static final Color[][] mediumImage = new Color[][]{{Color.RED, Color.GREEN, Color.BLUE, Color.WHITE}};
-    public static final Color[][] hardImage = new Color[][]{{Color.YELLOW, Color.WHITE, Color.BLUE, Color.CYAN, Color.GRAY, Color.ORANGE}};
+    public static final Color[][] hardImage = new Color[][]{{ Color.BLACK, Color.YELLOW.darker(), Color.YELLOW, Color.YELLOW.darker().darker().darker(),  Color.YELLOW.darker().darker(), Color.YELLOW.darker().darker().darker().darker()
+    }};
     //===============================================================================================================================
 
     public static void main(String[] args) { ImageViewerGUI program = new ImageViewerGUI();
@@ -71,6 +72,12 @@ public class ImageViewerGUI {
                 }
     }
     //========================================
+
+    private void swap(Color[] input, int idx1, int idx2){
+        Color temp = input[idx1];
+        input[idx1] = input[idx2];
+        input[idx2] = temp;
+    }
 
     private void refresh(Color[] arr) {
         ArrayDrawer graphics = new ArrayDrawer(new Color[][]{arr});

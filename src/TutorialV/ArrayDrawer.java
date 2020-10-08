@@ -15,15 +15,7 @@ public class ArrayDrawer extends Canvas {
     public ArrayDrawer(Color[][] input) {
         super();
         dataset = input[0];
-        /*Runnable r = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Sorting!");
-                bubbleSort(dataset);
-            }
-        };
-        r.run();*/
-        //bubbleSort(dataset);
+
     }
 
     public void refresh(Color[] input){
